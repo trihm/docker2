@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy'){
             steps {
-                sh 'docker container run jenkins_image'
+                sh 'docker container run -d jenkins_image'
             }
         }
     }
